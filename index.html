@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Djaky Group | Showroom Otomotif</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        header {
+            background:#b30000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        nav {
+            background: #000;
+            padding: 13px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff1a1a;
+        }
+
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+            background-size: cover;
+            background-position: center;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            background: rgba(0,0,0,0.6);
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-size: 28px;
+        }
+
+        .container {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1b1b1b;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px;
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            color: #ccc;
+            font-size: 14px;
+            flex-grow: 1;
+        }
+
+        footer {
+            background: #141414;
+            text-align: center;
+            padding: 5px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #141414;
+            padding: 50px 80px;
+            color: #fff;
+        }
+
+        .Djaky-class-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 1px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .footer h6 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .Djaky-class-5 {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Djaky-class-5 li a {
+            margin-bottom: 14px;
+            font-size: 16px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .Djaky-class-5 li a:hover {
+            color: #ff1a1a;
+        }
+
+        .Djaky-class-11 figure {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        .Djaky-class-11 img {
+            width: 32px;
+            height: 32px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .Djaky-class-11 img:hover {
+            transform: scale(1.2);
+        }
+
+        .Djaky-class-15 {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #d0d0d0;
+            max-width: 520px;
+            font-weight: 600;
+        }
+        
+
+@media (max-width: 900px) {
+        .Djaky-class-1 {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            }
+        }
+
+        .tombol-detail {
+            display: block;                 
+            margin: 0 15px 20px;
+            margin-top: auto;               
+            padding: 12px 0;
+            width: calc(100% - 30px);
+            background: #b30000;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            
+        }
+
+        .tombol-detail:hover {
+            background: #ff1a1a;
+            transform: translateY(-2px);
+            
+        }
+
+        .tombol-detail:active {
+            transform: translateY(0);
+            
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 20px;">DJAKY GROUP</h1>
+    <p>Showroom Otomotif & Kendaraan Premium</p>
+</header>
+
+<nav>
+    <a href="index.html"style="font-size: 17px;">Home</a>
+    <a href="tentangkami.html"style="font-size: 17px;">About Us</a>
+    <a href="kontak.html"style="font-size: 17px;">Contact Us</a>
+</nav>
+
+<section class="hero">
+    <h2>Solusi Kendaraan Premium & Terpercaya</h2>
+</section>
+
+<section class="container">
+    <div class="card">
+        <img src="https://www.motosikletsitesi.com/wp-content/uploads/2023/11/2024-bimota-terra-3-1220x915.jpg">
+        <h3>Sport Touring </h3>
+        <p>Sport Touring adalah jenis sepeda motor yang menggabungkan performa motor sport dengan kenyamanan motor touring. Motor ini dibuat agar tetap cepat dan responsif, tetapi nyaman dipakai perjalanan jauh.</p>
+        <a href="sport-touring.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/b5/70/fb/b570fbd5e12974023b1e911477050d19.jpg">
+        <h3>Motor Sport </h3>
+        <p>Motor sport adalah jenis sepeda motor yang dirancang untuk performa tinggi, kecepatan, dan kendali maksimal, terinspirasi dari motor balap.</p>
+        <a href="motor-sport.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+
+    <div class="card">
+        <img src="https://moladin.com/wp-content/uploads/2025/09/jenis-jenis-motor-cruiser-Moladin.jpg">
+        <h3>Motor Cruiser</h3>
+        <p>Motor cruiser adalah jenis sepeda motor yang dirancang untuk kenyamanan berkendara jarak jauh dengan gaya santai dan tampilan klasik/retro.</p>
+        <a href="motor-cruiser.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn.thecoolist.com/wp-content/uploads/2017/05/BMW-R1200-GS-Adventure-Motorcycle.jpg">
+        <h3>Motor Adventure</h3>
+        <p>Motor adventure (sering disebut ADV) adalah jenis sepeda motor yang dirancang untuk menjelajah berbagai medan, baik jalan aspal maupun off-road ringan hingga berat, serta nyaman untuk perjalanan jauh (touring).</p>
+        <a href="motor-adventure.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d">
+        <h3>Mobil Sport</h3>
+        <p>Mobil sport adalah jenis mobil yang dirancang untuk performa tinggi, kecepatan, dan handling (kendali) yang presisi, dengan desain yang aerodinamis dan tampilan agresif.</p>
+        <a href="mobil-sport.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+
+    <div class="card">
+        <img src="https://c.inilah.com/2023/08/0809_010044_20ee_inilah.com_.jpg">
+        <h3>Mobil SUV</h3>
+        <p>mobil yang dirancang untuk serbaguna, bisa digunakan di jalan perkotaan maupun medan yang lebih berat.</p>
+        <a href="mobil-suv.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+
+    <div class="card">
+        <img src="https://pict.sindonews.net/dyn/850/pena/news/2022/01/29/120/670923/ini-5-mobil-double-cabin-terbaik-dengan-harga-terjangkau-pilih-yang-mana-yzi.jpg">
+        <h3>Mobil Double Cabin</h3>
+        <p>Mobil double cabin adalah jenis mobil pikap yang memiliki dua baris kabin (4 pintu) sehingga bisa mengangkut penumpang dan barang sekaligus.</p>
+        <a href="double-cabin.html" class="tombol-detail">Lihat Detail</a>
+    </div>
+</section>
+
+
+<div id="page" class="site">
+    <div class="footer">
+        <div class="top">
+            <div class="row">
+                <div class="widgets" data-id="block">
+                    <div class="Djaky-class-1">
+                        <div class="Djaky-class-2">
+                            <h6 class="Djaky-class-3">Our Website</h6>
+                            <div class="Djaky-class-4">
+                                <ul class="Djaky-class-5">
+                                    <li class="Djaky-class-6">
+                                        <a class="Djaky-web1" href="index.html">Home</a>
+                                    </li>
+                                    <li class="Djaky-class-7"> 
+                                        <a class="Djaky-web2" href="tentangkami.html">About Us</a>
+                                    </li>
+                                    <li class="Djaky-class-8">
+                                        <a class="Djaky-web3" href="kontak.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Djaky-class-9">
+                            <h6 class="Djaky-class-10">Social Media</h6>
+                            <div class="Djaky-class-11">
+                               <figure class="Djaky-class-12">
+                                <a href="https://www.instagram.com/yousdzaky/">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                                </a>
+                               </figure>
+                            </div>
+                        </div>
+                        <div class="Djaky-class-13">
+                            <h6 class="Djaky-class-14">Our Location</h6>
+                            <div class="Djaky-class-15">
+                                 Operational Hours : 
+                                <br>
+                                 09.00 - 21.00 
+                                <br>
+                                <br>
+                                Alamat :
+                                <br>
+                                jl.Kali pasir gg.tembok, RT009 RW010, Kel.Kebon Sirih Kec.Menteng Jakarta Pusat
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Djaky Group | All Rights Reserved</p>
+</footer>
+
+<script>
+        alert("Selamat datang! di Djaky Group")
+</script>
+
+</body>
+</html>

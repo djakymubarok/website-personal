@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Djaky Group | Showroom Otomotif</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        header {
+            background:#b30000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        nav {
+            background: #000;
+            padding: 13px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff1a1a;
+        }
+
+        .hero {
+            background-image: url('https://i.pinimg.com/1200x/1a/d9/ba/1ad9bab3165c4572b34a52cd01fb2caf.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            background: rgba(0,0,0,0.6);
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-size: 28px;
+        }
+
+        .container {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1b1b1b;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px;
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            color: #ccc;
+            font-size: 14px;
+            flex-grow: 1;
+        }
+
+        footer {
+            background: #141414;
+            text-align: center;
+            padding: 5px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #141414;
+            padding: 50px 80px;
+            color: #fff;
+        }
+
+        .Djaky-class-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 1px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .footer h6 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .Djaky-class-5 {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Djaky-class-5 li a {
+            margin-bottom: 14px;
+            font-size: 16px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .Djaky-class-5 li a:hover {
+            color: #ff1a1a;
+        }
+
+        .Djaky-class-11 figure {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        .Djaky-class-11 img {
+            width: 32px;
+            height: 32px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .Djaky-class-11 img:hover {
+            transform: scale(1.2);
+        }
+
+        .Djaky-class-15 {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #d0d0d0;
+            max-width: 520px;
+            font-weight: 600;
+        }
+        
+
+@media (max-width: 900px) {
+        .Djaky-class-1 {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            }
+        }
+
+        .tombol-detail {
+            display: block;                
+            margin: 0 15px 20px;
+            margin-top: auto;               
+            padding: 12px 0;
+            width: calc(100% - 30px);
+            background: #b30000;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            
+        }
+
+        .tombol-detail:hover {
+            background: #ff1a1a;
+            transform: translateY(-2px);
+            
+        }
+
+        .tombol-detail:active {
+            transform: translateY(0);
+            
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 20px;">DJAKY GROUP</h1>
+    <p>Showroom Otomotif & Kendaraan Premium</p>
+</header>
+
+<nav>
+    <a href="index.html"style="font-size: 17px;">Home</a>
+    <a href="tentangkami.html"style="font-size: 17px;">About Us</a>
+    <a href="kontak.html"style="font-size: 17px;">Contact Us</a>
+</nav>
+
+<section class="hero">
+    <h2>Solusi Mobil SUV, Kuat & Bertenaga</h2>
+</section>
+
+<section class="container">
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/2b/e4/23/2be423633a1409f8aa6fba8b697cdd13.jpg">
+        <h3>Lamborghini Urus Performante</h3>
+        <p>
+            Mesin: V8 4.0L Twin-Turbo<br>
+            Tenaga: 666 hp<br>
+            Torsi: 850 Nm<br>
+            Transmisi: 8-speed Automatic<br>
+            Penggerak: AWD<br>
+            0–100 km/jam: 3,3 detik
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Lamborghini Urus Performante')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/76/e7/75/76e775aa5f99ffe40edf7a9a16c6ef72.jpg">
+        <h3>Range Rover Autobiography</h3>
+        <p>
+            Mesin: V8 4.4L Twin-Turbo<br>
+            Tenaga: 523 hp<br>
+            Torsi: 750 Nm<br>
+            Transmisi: 8-speed Automatic<br>
+            Penggerak: AWD<br>
+            Interior: Ultra Luxury
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Range Rover Autobiography')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/cb/fa/73/cbfa739ca6a11d91e544dff0c76b3ce4.jpg">
+        <h3>Mercedes-Benz G63 AMG</h3>
+        <p>
+            Mesin: V8 4.0L Biturbo<br>
+            Tenaga: 585 hp<br>
+            Torsi: 850 Nm<br>
+            Transmisi: AMG Speedshift<br>
+            Penggerak: AWD<br>
+            Ikon SUV Off-road Luxury
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Mercedes-Benz G63 AMG')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/64/d7/62/64d762c3238d81e833dd1d1639c4a403.jpg">
+        <h3>BMW X7 M60i</h3>
+        <p>
+            Mesin: V8 4.4L Twin-Turbo<br>
+            Tenaga: 523 hp<br>
+            Torsi: 750 Nm<br>
+            Transmisi: 8-speed Steptronic<br>
+            Penggerak: AWD xDrive<br>
+            Kapasitas: 7 Penumpang
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('BMW X7 M60i')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/9c/b1/fe/9cb1fe132f3912d0b4531797178e4f31.jpg">
+        <h3>Porsche Cayenne Turbo GT</h3>
+        <p>
+            Mesin: V8 4.0L Twin-Turbo<br>
+            Tenaga: 631 hp<br>
+            Torsi: 850 Nm<br>
+            Transmisi: 8-speed Tiptronic<br>
+            Penggerak: AWD<br>
+            0–100 km/jam: 3,3 detik
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Porsche Cayenne Turbo GT')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/eb/66/a2/eb66a2b372c3f2013ac80d2f0115d058.jpg">
+        <h3>Toyota Land Cruiser 300</h3>
+        <p>
+            Mesin: V6 3.5L Twin-Turbo<br>
+            Tenaga: 409 hp<br>
+            Torsi: 650 Nm<br>
+            Transmisi: 10-speed Automatic<br>
+            Penggerak: Full-Time AWD<br>
+            Legendaris Off-road
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Toyota Land Cruiser 300')">
+            Lihat Detail
+        </a>
+    </div>
+
+</section>
+
+
+
+<div id="page" class="site">
+    <div class="footer">
+        <div class="top">
+            <div class="row">
+                <div class="widgets" data-id="block">
+                    <div class="Djaky-class-1">
+                        <div class="Djaky-class-2">
+                            <h6 class="Djaky-class-3">Our Website</h6>
+                            <div class="Djaky-class-4">
+                                <ul class="Djaky-class-5">
+                                    <li class="Djaky-class-6">
+                                        <a class="Djaky-web1" href="index.html">Home</a>
+                                    </li>
+                                    <li class="Djaky-class-7"> 
+                                        <a class="Djaky-web2" href="tentangkami.html">About Us</a>
+                                    </li>
+                                    <li class="Djaky-class-8">
+                                        <a class="Djaky-web3" href="kontak.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Djaky-class-9">
+                            <h6 class="Djaky-class-10">Social Media</h6>
+                            <div class="Djaky-class-11">
+                               <figure class="Djaky-class-12">
+                                <a href="https://www.instagram.com/yousdzaky/">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                                </a>
+                               </figure>
+                            </div>
+                        </div>
+                        <div class="Djaky-class-13">
+                            <h6 class="Djaky-class-14">Our Location</h6>
+                            <div class="Djaky-class-15">
+                                 Operational Hours : 
+                                <br>
+                                 09.00 - 21.00 
+                                <br>
+                                <br>
+                                Alamat :
+                                <br>
+                                jl.Kali pasir gg.tembok, RT009 RW010, Kel.Kebon Sirih Kec.Menteng Jakarta Pusat
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Djaky Group | All Rights Reserved</p>
+</footer>
+
+<script>
+function kirimWA(namaMobil) {
+    const nomorWA = "6281299858235"; 
+    const pesan = `Selamat siang Djaky Group 
+Saya tertarik dengan ${namaMobil} yang ada di website Djaky Group.
+Mohon informasi mengenai harga, spesifikasi lengkap, dan ketersediaan unit.
+Terima kasih `;
+
+    const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

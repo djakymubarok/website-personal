@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+    <html lang="id">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Djaky Group | Showroom Otomotif</title>
+
+    <style>
+    body{
+        margin:0;
+        font-family:'Segoe UI',Arial,sans-serif;
+        background:#000;
+        color:#fff;
+    }
+    header{
+        background:#b30000;
+        padding:10px;
+        text-align:center;
+    }
+    nav{
+        background:#000;
+        padding:13px;
+        text-align:center;
+    }
+    nav a{
+        color:#fff;
+        margin:0 10px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    nav a:hover{color:#ff1a1a;}
+    .hero{
+        background-image:url('https://i.pinimg.com/736x/2f/4b/80/2f4b805d44de3fc209ffb7f5c8ab2045.jpg');
+        background-size:cover;
+        background-position:center;
+        height:320px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .hero h2{
+        background:rgba(0,0,0,.6);
+        padding:20px 30px;
+        border-radius:8px;
+        font-size:28px;
+    }
+    .container{
+        padding:40px;
+        display:flex;
+        justify-content:center;
+        gap:25px;
+        flex-wrap:wrap;
+    }
+    .card{
+        background:#1b1b1b;
+        width:300px;
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,.8);
+        transition:.3s;
+        display:flex;
+        flex-direction:column;
+    }
+    .card:hover{transform:translateY(-8px);}
+    .card img{
+        width:100%;
+        height:190px;
+        object-fit:cover;
+    }
+    .card h3{margin:15px;}
+    .card p{
+        margin:0 15px 15px;
+        color:#ccc;
+        font-size:14px;
+        flex-grow:1;
+    }
+    .tombol-detail{
+        display:block;
+        margin:0 15px 20px;
+        margin-top:auto;
+        padding:12px 0;
+        width:calc(100% - 30px);
+        background:#b30000;
+        color:#fff;
+        text-align:center;
+        text-decoration:none;
+        font-weight:600;
+        border-radius:8px;
+        transition:.3s;
+    }
+    .tombol-detail:hover{
+        background:#ff1a1a;
+        transform:translateY(-2px);
+    }
+    footer{
+        background:#141414;
+        text-align:center;
+        padding:5px;
+        color:#aaa;
+    }
+    </style>
+    </head>
+
+    <body>
+
+    <header>
+        <h1 style="font-size:20px;">DJAKY GROUP</h1>
+        <p>Showroom Otomotif & Kendaraan Premium</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tentangkami.html">About Us</a>
+        <a href="kontak.html">Contact Us</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Motor Cruiser – Elegan, Nyaman & Berkelas</h2>
+    </section>
+
+    <section class="container">
+
+    <div class="card">
+    <img src="https://i.pinimg.com/736x/b2/50/12/b2501275a714c1227fb3cfca9adb7932.jpg">
+    <h3>Harley-Davidson Fat Boy 114</h3>
+    <p>
+    Mesin: 1868 cc Milwaukee-Eight 114<br>
+    Tenaga: ± 94 hp<br>
+    Torsi: 155 Nm<br>
+    Transmisi: 6-speed Cruise Drive<br>
+    Karakter: Cruiser Ikonik<br>
+    Kenyamanan Tinggi
+    </p>
+    <a href="#" class="tombol-detail" onclick="kirimWA('Harley-Davidson Fat Boy 114')">
+    Lihat Detail
+    </a>
+    </div>
+
+    <div class="card">
+    <img src="https://i.pinimg.com/1200x/65/5c/68/655c683b8651cc73b5558ee944ea2bab.jpg">
+    <h3>Indian Scout Bobber</h3>
+    <p>
+    Mesin: 1133 cc V-Twin<br>
+    Tenaga: 100 hp<br>
+    Torsi: 97 Nm<br>
+    Transmisi: 6-speed<br>
+    Desain: Bobber Modern<br>
+    Santai & Stylish
+    </p>
+    <a href="#" class="tombol-detail" onclick="kirimWA('Indian Scout Bobber')">
+    Lihat Detail
+    </a>
+    </div>
+
+    <div class="card">
+    <img src="https://i.pinimg.com/736x/61/e8/74/61e874306703b316b2a37772812f5ad6.jpg">
+    <h3>Honda Rebel 1100</h3>
+    <p>
+    Mesin: 1084 cc Parallel Twin<br>
+    Tenaga: 87 hp<br>
+    Torsi: 98 Nm<br>
+    Transmisi: DCT / Manual<br>
+    Posisi Duduk Nyaman<br>
+    Cruiser Harian
+    </p>
+    <a href="#" class="tombol-detail" onclick="kirimWA('Honda Rebel 1100')">
+    Lihat Detail
+    </a>
+    </div>
+
+    <div class="card">
+    <img src="https://i.pinimg.com/1200x/36/6c/78/366c78c9bbcd3f633b10e2f0be43141c.jpg">
+    <h3>Kawasaki Vulcan S</h3>
+    <p>
+    Mesin: 649 cc Parallel Twin<br>
+    Tenaga: 61 hp<br>
+    Torsi: 62 Nm<br>
+    Transmisi: 6-speed<br>
+    Ergo-Fit System<br>
+    Cruiser Modern
+    </p>
+    <a href="#" class="tombol-detail" onclick="kirimWA('Kawasaki Vulcan S')">
+    Lihat Detail
+    </a>
+    </div>
+
+    <div class="card">
+    <img src="https://i.pinimg.com/736x/2e/d3/d9/2ed3d954cd4f4bc5675d5bb0d695e903.jpg">
+    <h3>Yamaha Bolt R-Spec</h3>
+    <p>
+    Mesin: 942 cc V-Twin<br>
+    Tenaga: ± 54 hp<br>
+    Torsi: 80 Nm<br>
+    Transmisi: 5-speed<br>
+    Desain Minimalis<br>
+    Cruiser Santai
+    </p>
+    <a href="#" class="tombol-detail" onclick="kirimWA('Yamaha Bolt R-Spec')">
+    Lihat Detail
+    </a>
+    </div>
+
+    </section>
+
+    <footer>
+    <p>© 2026 Djaky Group | All Rights Reserved</p>
+    </footer>
+
+    <script>
+    function kirimWA(namaMotor){
+    const nomorWA="6281299858235";
+    const pesan=`Selamat siang Djaky Group,
+    Saya tertarik dengan ${namaMotor} (Motor Cruiser).
+    Mohon informasi harga, spesifikasi lengkap, dan ketersediaan unit.
+    Terima kasih.`;
+    window.open(`https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,"_blank");
+    }
+    </script>
+
+    </body>
+    </html>

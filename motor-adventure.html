@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Djaky Group | Showroom Otomotif</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        header {
+            background:#b30000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        nav {
+            background: #000;
+            padding: 13px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff1a1a;
+        }
+
+        .hero {
+            background-image: url('https://i.pinimg.com/1200x/c5/ba/4e/c5ba4ee75369e6bebfdb0e876733c85a.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            background: rgba(0,0,0,0.6);
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-size: 28px;
+        }
+
+        .container {
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1b1b1b;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px;
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            color: #ccc;
+            font-size: 14px;
+            flex-grow: 1;
+        }
+
+        footer {
+            background: #141414;
+            text-align: center;
+            padding: 5px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #141414;
+            padding: 50px 80px;
+            color: #fff;
+        }
+
+        .Djaky-class-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 1px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .footer h6 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .Djaky-class-5 {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Djaky-class-5 li a {
+            margin-bottom: 14px;
+            font-size: 16px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .Djaky-class-5 li a:hover {
+            color: #ff1a1a;
+        }
+
+        .Djaky-class-11 figure {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        .Djaky-class-11 img {
+            width: 32px;
+            height: 32px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+        }
+
+        .Djaky-class-11 img:hover {
+            transform: scale(1.2);
+        }
+
+        .Djaky-class-15 {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #d0d0d0;
+            max-width: 520px;
+            font-weight: 600;
+        }
+        
+
+@media (max-width: 900px) {
+        .Djaky-class-1 {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            }
+        }
+
+
+        .tombol-detail {
+            display: block;                
+            margin: 0 15px 20px;
+            margin-top: auto;              
+            padding: 12px 0;
+            width: calc(100% - 30px);
+            background: #b30000;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            
+        }
+
+        .tombol-detail:hover {
+            background: #ff1a1a;
+            transform: translateY(-2px);
+            
+        }
+
+        .tombol-detail:active {
+            transform: translateY(0);
+            
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 20px;">DJAKY GROUP</h1>
+    <p>Showroom Otomotif & Kendaraan Premium</p>
+</header>
+
+<nav>
+    <a href="index.html"style="font-size: 17px;">Home</a>
+    <a href="tentangkami.html"style="font-size: 17px;">About Us</a>
+    <a href="kontak.html"style="font-size: 17px;">Contact Us</a>
+</nav>
+
+<section class="hero">
+    <h2>Solusi motor adventure & Terpercaya</h2>
+</section>
+
+
+<section class="container">
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/43/24/c8/4324c8a25824d77413d6e12f8136256b.jpg">
+        <h3>BMW R 1250 GS Adventure</h3>
+        <p>
+            Mesin: 1254 cc Boxer Twin<br>
+            Tenaga: 136 hp<br>
+            Torsi: 143 Nm<br>
+            Transmisi: 6-speed + Quickshifter<br>
+            Tangki: 30 Liter<br>
+            Mode: Rain, Road, Dynamic, Enduro
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('BMW R 1250 GS Adventure')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/9c/4f/26/9c4f26e82d364f5114987e70e990fb5f.jpg">
+        <h3>Honda CRF1100L Africa Twin</h3>
+        <p>
+            Mesin: 1084 cc Parallel Twin<br>
+            Tenaga: 101 hp<br>
+            Torsi: 105 Nm<br>
+            Transmisi: Manual / DCT<br>
+            Suspensi: Showa Long Travel<br>
+            Mode: Touring, Gravel, Off-road
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Honda CRF1100L Africa Twin')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/00/1f/71/001f71dc105904c759a49325a96e6f83.jpg">
+        <h3>Yamaha Tenere 700</h3>
+        <p>
+            Mesin: 689 cc CP2<br>
+            Tenaga: 74 hp<br>
+            Torsi: 68 Nm<br>
+            Bobot: ± 204 kg<br>
+            Karakter: Rally Adventure<br>
+            Cocok: On-road & Off-road
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Yamaha Tenere 700')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/8b/22/ec/8b22ec9ce4c4e2c0290567c8c6a9de3f.jpg">
+        <h3>KTM 1290 Super Adventure R</h3>
+        <p>
+            Mesin: 1301 cc V-Twin<br>
+            Tenaga: 160 hp<br>
+            Torsi: 138 Nm<br>
+            Suspensi: WP XPLOR<br>
+            Mode: Offroad Pro<br>
+            Fokus: Extreme Adventure
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('KTM 1290 Super Adventure R')">
+            Lihat Detail
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/92/b6/26/92b626575b2b2bac7c853b2f3cb7c5a0.jpg">
+        <h3>Ducati Multistrada V4</h3>
+        <p>
+            Mesin: 1158 cc V4 Granturismo<br>
+            Tenaga: 170 hp<br>
+            Torsi: 125 Nm<br>
+            Transmisi: Ducati Quick Shift<br>
+            Teknologi: Radar Adaptive Cruise<br>
+            Karakter: Luxury Adventure
+        </p>
+        <a href="#" class="tombol-detail" onclick="kirimWA('Ducati Multistrada V4')">
+            Lihat Detail
+        </a>
+    </div>
+
+</section>
+
+
+
+
+
+
+<div id="page" class="site">
+    <div class="footer">
+        <div class="top">
+            <div class="row">
+                <div class="widgets" data-id="block">
+                    <div class="Djaky-class-1">
+                        <div class="Djaky-class-2">
+                            <h6 class="Djaky-class-3">Our Website</h6>
+                            <div class="Djaky-class-4">
+                                <ul class="Djaky-class-5">
+                                    <li class="Djaky-class-6">
+                                        <a class="Djaky-web1" href="index.html">Home</a>
+                                    </li>
+                                    <li class="Djaky-class-7"> 
+                                        <a class="Djaky-web2" href="tentangkami.html">About Us</a>
+                                    </li>
+                                    <li class="Djaky-class-8">
+                                        <a class="Djaky-web3" href="kontak.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Djaky-class-9">
+                            <h6 class="Djaky-class-10">Social Media</h6>
+                            <div class="Djaky-class-11">
+                               <figure class="Djaky-class-12">
+                                <a href="https://www.instagram.com/yousdzaky/">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                                </a>
+                               </figure>
+                            </div>
+                        </div>
+                        <div class="Djaky-class-13">
+                            <h6 class="Djaky-class-14">Our Location</h6>
+                            <div class="Djaky-class-15">
+                                 Operational Hours : 
+                                <br>
+                                 09.00 - 21.00 
+                                <br>
+                                <br>
+                                Alamat :
+                                <br>
+                                jl.Kali pasir gg.tembok, RT009 RW010, Kel.Kebon Sirih Kec.Menteng Jakarta Pusat
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Djaky Group | All Rights Reserved</p>
+</footer>
+
+
+<script>
+function kirimWA(namaMOTOR) {
+    const nomorWA = "6281299858235"; 
+    const pesan = `Selamat siang Djaky Group 
+Saya tertarik dengan ${namaMOTOR} yang ada di website Djaky Group.
+Mohon informasi mengenai harga, spesifikasi lengkap, dan ketersediaan unit.
+Terima kasih `;
+
+    const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
